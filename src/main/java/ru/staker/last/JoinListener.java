@@ -16,6 +16,10 @@ public class JoinListener implements Listener {
 
     private PlayerBalanceService balanceService;
 
+    public JoinListener(PlayerBalanceService balanceService) {
+        this.balanceService = balanceService;
+    }
+
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
